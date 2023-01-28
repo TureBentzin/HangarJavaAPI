@@ -38,7 +38,6 @@ public class Pagination {
    */
   @JsonAdapter(LimitEnum.Adapter.class)
   public enum LimitEnum {
-    NUMBER_null(nulll);
 
     private Long value;
 
@@ -87,7 +86,6 @@ public class Pagination {
    */
   @JsonAdapter(OffsetEnum.Adapter.class)
   public enum OffsetEnum {
-    NUMBER_null(nulll);
 
     private Long value;
 

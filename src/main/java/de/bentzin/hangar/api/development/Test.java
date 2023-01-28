@@ -3,6 +3,8 @@ package de.bentzin.hangar.api.development;
 import de.bentzin.hangar.api.HangarJavaAPI;
 import de.bentzin.hangar.api.base.HangarAPIVersion;
 import de.bentzin.hangar.api.base.HangarInstance;
+import de.bentzin.hangar.api.client.ApiClient;
+import de.bentzin.hangar.api.client.api.UsersApi;
 import de.bentzin.hangar.api.service.HangarAPIService;
 import okhttp3.ResponseBody;
 

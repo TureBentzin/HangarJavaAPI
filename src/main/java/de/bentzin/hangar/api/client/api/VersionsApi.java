@@ -774,16 +774,14 @@ public class VersionsApi {
             basePath = localCustomBaseUrl;
         } else if ( localBasePaths.length > 0 ) {
             basePath = localBasePaths[localHostIndex];
-        } else {
-            basePath = null;
         }
 
         Object localVarPostBody = null;
 
         // create path and map variables
         String localVarPath = "/api/v1/projects/{author}/{slug}/upload"
-            .replace("{" + "author" + "}", localVarApiClient.escapeString(author.toString()))
-            .replace("{" + "slug" + "}", localVarApiClient.escapeString(slug.toString()));
+            .replace("{" + "author" + "}", localVarApiClient.escapeString(author))
+            .replace("{" + "slug" + "}", localVarApiClient.escapeString(slug));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
