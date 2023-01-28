@@ -37,6 +37,9 @@ info:
 servers:
   - url: https://hangar.papermc.dev
     description: Generated server url
+  - url: https://hangar.papermc.io
+    description: Production instance
+
 paths:
   /api/v1/projects/{author}/{slug}/upload:
     post:
@@ -939,7 +942,7 @@ paths:
                 type: string
                 format: binary
       security:
-        - HangarAuth: []
+        - HangarAuth: [ ]
   /api/v1/projects/{author}/{slug}/stats:
     get:
       tags:
@@ -1150,7 +1153,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/UserPermissions'
       security:
-        - HangarAuth: []
+        - HangarAuth: [ ]
   /api/v1/permissions/hasAny:
     get:
       tags:
@@ -1209,7 +1212,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/PermissionCheck'
       security:
-        - HangarAuth: []
+        - HangarAuth: [ ]
   /api/v1/permissions/hasAll:
     get:
       tags:
@@ -1268,7 +1271,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/PermissionCheck'
       security:
-        - HangarAuth: []
+        - HangarAuth: [ ]
   /api/v1/authors:
     get:
       tags:
