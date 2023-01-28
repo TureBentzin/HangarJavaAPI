@@ -4,9 +4,8 @@ import de.bentzin.hangar.api.ApiClient;
 import de.bentzin.hangar.api.ApiException;
 import de.bentzin.hangar.api.client.ProjectsApi;
 import org.jetbrains.annotations.NotNull;
-import org.openapitools.client.model.PaginatedResultProject;
-import org.openapitools.client.model.Project;
-import org.openapitools.client.model.RequestPagination;
+import de.bentzin.hangar.api.model.*;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
