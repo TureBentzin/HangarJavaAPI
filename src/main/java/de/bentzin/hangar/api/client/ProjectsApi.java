@@ -640,12 +640,13 @@ public class ProjectsApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("orderWithRelevance", orderWithRelevance));
         }
 
-        /*
         if (pagination != null) {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("pagination", pagination));
         }
-         */
-        if(pagination != null) {
+
+
+        /*
+         if(pagination != null) {
             if(pagination.getLimit() != null) {
                 localVarQueryParams.addAll(localVarApiClient.parameterToPair("limit", pagination.getLimit()));
             }
@@ -653,6 +654,9 @@ public class ProjectsApi {
                 localVarQueryParams.addAll(localVarApiClient.parameterToPair("offset", pagination.getOffset()));
             }
         }
+         */
+
+
 
 
         if (sort != null) {
