@@ -19,6 +19,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.gsonfire.GsonFireBuilder;
 import okio.ByteString;
+import org.jetbrains.annotations.NotNull;
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.OffsetDateTime;
 import org.threeten.bp.format.DateTimeFormatter;
@@ -33,7 +34,7 @@ import java.util.Date;
 import java.util.Map;
 
 public class JSON {
-    private Gson gson;
+    private @NotNull Gson gson;
     private boolean isLenientOnJson = false;
     private DateTypeAdapter dateTypeAdapter = new DateTypeAdapter();
     private SqlDateTypeAdapter sqlDateTypeAdapter = new SqlDateTypeAdapter();

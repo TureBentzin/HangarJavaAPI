@@ -55,7 +55,7 @@ import java.util.regex.Pattern;
 
 public class ApiClient {
 
-    private String basePath = "https://hangar.papermc.dev";
+    private String basePath = "https://hangar.papermc.io";
     private boolean debugging = false;
     private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
     private Map<String, String> defaultCookieMap = new HashMap<String, String>();
@@ -141,7 +141,7 @@ public class ApiClient {
     /**
      * Set base path
      *
-     * @param basePath Base path of the URL (e.g https://hangar.papermc.dev
+     * @param basePath Base path of the URL (e.g https://hangar.papermc.io
      * @return An instance of OkHttpClient
      */
     public ApiClient setBasePath(String basePath) {

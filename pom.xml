@@ -6,7 +6,7 @@
 
     <groupId>de.bentzin</groupId>
     <artifactId>HangarJavaAPI</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
 
 
 
@@ -122,15 +122,15 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <gson-fire-version>1.8.5</gson-fire-version>
@@ -148,5 +148,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spotless.version>2.27.2</spotless.version>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>juligames</id>
+            <name>Juligames Maven</name>
+            <url>https://maven.juligames.net/juligames</url>
+        </repository>
+    </distributionManagement>
 
 </project>
